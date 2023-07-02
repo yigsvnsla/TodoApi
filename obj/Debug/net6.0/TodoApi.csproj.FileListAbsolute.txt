@@ -8,14 +8,8 @@ C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\TodoApi.pdb
 C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
-C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
-C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
-C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -36,3 +30,8 @@ C:\Users\Admin\Desktop\TodoApi\obj\Debug\net6.0\refint\TodoApi.dll
 C:\Users\Admin\Desktop\TodoApi\obj\Debug\net6.0\TodoApi.pdb
 C:\Users\Admin\Desktop\TodoApi\obj\Debug\net6.0\TodoApi.genruntimeconfig.cache
 C:\Users\Admin\Desktop\TodoApi\obj\Debug\net6.0\ref\TodoApi.dll
+C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Admin\Desktop\TodoApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

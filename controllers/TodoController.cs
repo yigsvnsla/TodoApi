@@ -1,22 +1,50 @@
 using Microsoft.AspNetCore.Mvc;
-using TodoApi.Models;
-using TodoApi.Services;
-namespace TodoApi.Controllers
+using TodoApi.DTO.Todo;
+using TodoApi.Interfaces.Todo;
+using System.Net;
+
+namespace TodoApi.Controllers.Todo
 {
-    
     [ApiController]
-    [Route("api/todos")]
-    public class TodoController
+    [Route("todos")]
+    public class TodoController : ITodoController
     {
         private readonly ITodoService _todoService;
-        public TodoController(ITodoService todoService){
+        public TodoController(ITodoService todoService)
+        {
             _todoService = todoService;
         }
-    
-        [HttpGet]
-        public async Task<ActionResult<List<TodoItemsModel>>> GetActionResultAsync()
+
+        [HttpPost]
+        [ProducesResponseType(typeof(TodoDto), (int)HttpStatusCode.Created)]
+        [ProducesResponseType(typeof(ProblemDetails), (int)HttpStatusCode.NotAcceptable)]
+        public async Task<ActionResult<TodoDto>> CreateController([FromBody] CreateTodoDto createTodoDto)
         {
-            return await _todoService.FindTodos();
+            return await _todoService.Create(createTodoDto);
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<TodoDto>>> GetAllController()
+        {
+            return await _todoService.GetAll();
+        }
+
+        [HttpGet("id")]
+        public async Task<ActionResult<TodoDto>> GetByIdController([FromRoute] int id)
+        {
+            return await _todoService.GetById(id);
+        }
+
+        [HttpPut]
+        public async Task<ActionResult<TodoDto>> UpdateController([FromBody] TodoDto todoDto)
+        {
+            return await _todoService.Update(todoDto);
+        }
+
+        [HttpDelete("id")]
+        public async Task<ActionResult<TodoDto>> DeleteController(int id)
+        {
+            return await _todoService.Delete(id);
         }
     }
 }

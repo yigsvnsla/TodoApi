@@ -1,12 +1,13 @@
 using Microsoft.EntityFrameworkCore;
-namespace TodoApi.Models
+namespace TodoApi.Models.Todo
 {
     public class TodoDbContext : DbContext
     {
         public TodoDbContext(DbContextOptions<TodoDbContext> options) : base(options)
         {
+            TodoItems= Set<TodoModel>();
         }
 
-        public DbSet<TodoItemsModel> TodoItems { get; set; }
+        public DbSet<TodoModel> TodoItems { get; set; }
     }
 }

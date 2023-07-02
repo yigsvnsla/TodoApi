@@ -2,7 +2,7 @@ namespace TodoApi.Models
 {
     public class Connection
     {
-        public string ConnectionString { get; } = String.Empty;
+        public string? ConnectionString { get; }
 
         public Connection()
         {
